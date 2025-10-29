@@ -22,3 +22,11 @@ A web browser have a particular template in which we can show contents on the we
 It stores the data as tables in a database. In Django, models store the data as objects. For this make desired changes in the `my_django_project/app_create/models.py`.  
 After this we tell django our changes by the command `python manage.py makemigrations` (just adds what changes needs to done) and apply those changes by `python manage.py migrate` (finally does the changes).  
 Now we can add, update or delete data in this database.  
+
+## Django Admin:-  
+Comes pre made. Just navigate to '/admin'.   
+
+### Creating a user:-
+Run the command:- `python manage.py createsuperuser` and create a new user.  
+
+We can also make our models make show on this page. For this go in `app_create/admin.py` and register your model there. We can also change how the data gets displayed here using `list_display`. We can make changes in the database from this page like the CRUD operations.
